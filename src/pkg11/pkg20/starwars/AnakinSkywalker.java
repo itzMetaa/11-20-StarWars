@@ -9,6 +9,27 @@ package pkg11.pkg20.starwars;
  *
  * @author Diak
  */
-public class AnakinSkywalker {
+public abstract class AnakinSkywalker extends Jedi implements Sith{
+
+    public AnakinSkywalker(double ero, boolean atallhatE) {
+        super(150, true);
+    }
+
+    @Override
+    public boolean megteremtiAzEgyensulyt() {
+        if(AnakinSkywalker.mekkoraAzEreje > 1000){
+            return true;
+        } else{
+            return false;
+        }
+    }
+
+    @Override
+    public boolean engeddElAHaragod() {
+        if(engeddElAHaragod){
+            super.ero += RandomDouble*10;
+        }
+    }
+    
     
 }

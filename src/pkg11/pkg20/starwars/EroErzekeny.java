@@ -1,14 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package pkg11.pkg20.starwars;
 
-/**
- *
- * @author Diak
- */
-public class EroErzekeny {
+
+public abstract interface EroErzekeny {
+    public abstract boolean legyoziE(EroErzekeny ellenfel);
     
+    public abstract double mekkoraAzEreje();
 }
