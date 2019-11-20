@@ -1,23 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package pkg11.pkg20.starwars;
 
-/**
- *
- * @author Diak
- */
+import java.util.Random;
+
 public abstract class AnakinSkywalker extends Jedi implements Sith{
 
-    public AnakinSkywalker(double ero, boolean atallhatE) {
+    Random r = new Random();
+    
+    public AnakinSkywalker() {
         super(150, true);
     }
 
     @Override
     public boolean megteremtiAzEgyensulyt() {
-        if(AnakinSkywalker.mekkoraAzEreje > 1000){
+        if(mekkoraAzEreje() > 1000){
             return true;
         } else{
             return false;
@@ -25,10 +21,8 @@ public abstract class AnakinSkywalker extends Jedi implements Sith{
     }
 
     @Override
-    public boolean engeddElAHaragod() {
-        if(engeddElAHaragod){
-            super.ero += RandomDouble*10;
-        }
+    public void engeddElAHaragod() {
+            super.ero += r.nextDouble()*10;
     }
     
     
